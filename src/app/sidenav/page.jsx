@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Sidebar } from "./sidebar";
 import { useState } from "react";
-import clsx from "clsx";
 import Image from "next/image";
 export default function Navbar() {
   const pathname = usePathname();
