@@ -1,7 +1,13 @@
 import clsx from "clsx";
 import Link from "next/link";
 
-function Sidebar({ isOpen, toggle }: { isOpen: boolean; toggle: () => void }) {
+export default function Sidebar({
+  isOpen,
+  toggle,
+}: {
+  isOpen: boolean;
+  toggle: () => void;
+}) {
   return (
     <div
       className={`sidebar-container  h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10 sm:invisible ${clsx(
@@ -47,5 +53,3 @@ function Sidebar({ isOpen, toggle }: { isOpen: boolean; toggle: () => void }) {
     </div>
   );
 }
-
-export { Sidebar };

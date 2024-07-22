@@ -2,7 +2,7 @@
 import MenuButton from "@/components/menuButton";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Sidebar } from "./sidebar/page";
+import Sidebar from "./sidebar/page";
 import { useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
