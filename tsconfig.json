@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/corousel/index.jsx",
-    "src/app/contactme/page.jsx"
+    "src/app/contactme/page.jsx",
+    "src/app/sidenav/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
