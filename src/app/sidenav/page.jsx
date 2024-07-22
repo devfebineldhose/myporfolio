@@ -2,7 +2,7 @@
 import MenuButton from "@/components/menuButton";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Sidebar } from "./sidebar/page";
+// import { Sidebar } from "./sidebar/page";
 import { useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
@@ -14,7 +14,7 @@ export default function Navbar() {
   };
   return (
     <div className="font-monts font-bold">
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <MenuButton toggle={toggle} />
       <div className=" flex flex-row justify-between sticky gap-10 items-center  invisible md:visible lg:visible xl:visible   z-10 fixed sm:p-5">
         <button>
