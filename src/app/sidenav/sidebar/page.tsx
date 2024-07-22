@@ -48,4 +48,4 @@ function Sidebar({ isOpen, toggle }: { isOpen: boolean; toggle: () => void }) {
   );
 }
 
-export default Sidebar;
+export { Sidebar };
