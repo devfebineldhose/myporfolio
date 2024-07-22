@@ -1,5 +1,5 @@
-import Main from "./main";
+import Master from "./main";
 
-export default function () {
-  return <Main />;
+export default function Main() {
+  return <Master />;
 }
