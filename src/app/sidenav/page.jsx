@@ -3,14 +3,14 @@ import MenuButton from "@/components/menuButton";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Sidebar } from "./sidebar";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Image from "next/image";
 export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => {
+  const toggle = useCallback(() => {
     setIsOpen(!isOpen);
-  };
+  }, [isOpen, setIsOpen]);
   return (
     <div className="font-monts font-bold">
       <Sidebar isOpen={isOpen} toggle={toggle} />
